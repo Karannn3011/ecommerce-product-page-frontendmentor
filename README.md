@@ -40,7 +40,7 @@ Mobile:
 
 ### Links
 
-- Live Site URL: [Here](https://karannn3011.github.io/ecommerce-product-page-frontendmentor/)
+- Live Site URL: [Here](https://ecommerce-product-page-frontendmentor-flax.vercel.app/)
 
 ## My process
 
