@@ -2,7 +2,7 @@ export default function Cart(props) {
   return (
     <>
       <div
-        className={`min-h-[200px] z-5 w-[90%] bg-white  absolute left-1/2 -translate-x-1/2 rounded-lg transition-transform duration-150 shadow-lg ${
+        className={`min-h-[200px] z-5 w-[90%] lg:w-[400px] bg-white lg:left-[75%]  absolute left-1/2 -translate-x-1/2 rounded-lg transition-transform duration-150 shadow-lg ${
           props.isCartShown ? "translate-y-[10px]" : "-translate-y-[300px]"
         }`}
       >
@@ -40,7 +40,7 @@ export default function Cart(props) {
               </div>
             </div>
             <div className="px-4 pt-3 pb-5">
-              <button className="bg-orange p-3 w-[100%] rounded-lg">
+              <button onClick={() => alert("Thanks for purchasing!")} className="bg-orange cursor-pointer p-3 w-[100%] rounded-lg">
                 Checkout
               </button>
             </div>

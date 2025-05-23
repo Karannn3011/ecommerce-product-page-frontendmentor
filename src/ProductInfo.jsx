@@ -1,7 +1,7 @@
 export default function ProductInfo() {
   return (
     <>
-      <div className="w-[90%] mx-auto pt-6 py-4">
+      <div className="w-[90%] mx-auto pt-6 py-4 col-start-2 lg:mt-15">
         <h1 className="text-xs tracking-widest font-bold text-dark-grayish-blue">
           SNEAKER COMPANY
         </h1>

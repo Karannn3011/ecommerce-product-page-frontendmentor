@@ -1,4 +1,5 @@
 import { useState } from "react";
+import DesktopLightbox from "./DesktopLightbox.jsx";
 
 // Importing the product images and thumbnails dynamically
 const productImages = import.meta.glob(
@@ -23,6 +24,7 @@ export default function ProductGallery() {
   const prodImages = Object.values(productImages);
   const thumbs = Object.values(thumbnails);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [lb, setLb] = useState(false);
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % prodImages.length);
   };
@@ -34,15 +36,39 @@ export default function ProductGallery() {
   };
 
   return (
-    <div className="relative w-full mt-0">
-      <div className="relative h-90 overflow-hidden rounded-sm">
-        <div className="carousel-item duration-700 ease-in-out">
+    <div className="relative w-full mt-0 row-span-2 lg:w-[400px] mx-auto lg:h-[400px]">
+      <div className="relative h-90 overflow-hidden rounded-sm lg:w-[400px] lg:h-[400px] mx-auto">
+        <div className="carousel-item duration-700 ease-in-out ">
           <img
+            onClick={() => {
+              if (window.innerWidth >= 1024) {
+                setLb(true);
+              }
+            }}
             src={prodImages[currentIndex]}
-            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            className="absolute block w-full  object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 cursor-pointer"
             alt={`product-${currentIndex}`}
           />
         </div>
+      </div>
+      <div className="hidden lg:flex flex-row justify-between mt-4">
+        {thumbs.map((img, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrentIndex(i)}
+            className={`rounded-lg p-1 transition-all duration-200 ${
+              currentIndex === i
+                ? "border-2 border-orange-500"
+                : "border-2 border-transparent"
+            }`}
+          >
+            <img
+              src={img}
+              alt={`thumb-${i}`}
+              className="w-[80px] rounded-md cursor-pointer hover:opacity-50"
+            />
+          </button>
+        ))}
       </div>
 
       <button
@@ -65,6 +91,13 @@ export default function ProductGallery() {
           <span className="sr-only">Next</span>
         </span>
       </button>
+
+      <DesktopLightbox
+        lb={lb}
+        setLb={setLb}
+        prodImages={prodImages}
+        thumbs={thumbs}
+      />
     </div>
   );
 }
