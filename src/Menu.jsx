@@ -7,7 +7,7 @@ export default function Menu(props) {
       <img
         className="h-[20px]"
         onClick={props.closeMenu}
-        src="src/assets/icon-close.svg"
+        src="./assets/icon-close.svg"
         alt="close"
       />
       <ul className="mt-10 leading-11 text-lg font-semibold">

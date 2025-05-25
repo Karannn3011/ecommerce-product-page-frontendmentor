@@ -18,11 +18,11 @@ function Header(props) {
           <img
             className="z-10 lg:hidden"
             onClick={handleClick}
-            src="./src/assets/icon-menu.svg"
+            src="./assets/icon-menu.svg"
             alt="hamburger"
           />
           <img
-            src="./src/assets/logo.svg"
+            src="./assets/logo.svg"
             alt="logo"
             className="z-10 h-[20px] lg:mt-5 lg:my-7"
           />
@@ -39,11 +39,11 @@ function Header(props) {
           <img
             className="cart-icon z-10 cursor-pointer after:content"
             onClick={() => props.setCartShown((prev) => !prev)}
-            src="./src/assets/icon-cart.svg"
+            src="./assets/icon-cart.svg"
             alt="cart"
           ></img><span className="absolute  bg-orange text-white px-[6px] top-[15px] translate-x-[12px] rounded-full text-xs">{props.items}</span></div>
           <img
-            src="./src/assets/image-avatar.png"
+            src="./assets/image-avatar.png"
             className="h-[30px] z-10 cursor-pointer border-2 border-transparent hover:border-orange rounded-full "
             alt="avatar"
           />

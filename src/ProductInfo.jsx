@@ -16,9 +16,13 @@ export default function ProductInfo() {
         <div className="flex flex-row my-4 justify-between items-center">
           <div className="flex flex-row justify-between items-center gap-x-3">
             <h1 className="text-3xl font-semibold">$125.00</h1>
-            <span className="bg-black text-white py-1 px-2 text-xs font-bold rounded-lg">50%</span>
+            <span className="bg-black text-white py-1 px-2 text-xs font-bold rounded-lg">
+              50%
+            </span>
           </div>
-          <p className="text-dark-grayish-blue font-bold line-through">$250.00</p>
+          <p className="text-dark-grayish-blue font-bold line-through">
+            $250.00
+          </p>
         </div>
       </div>
     </>

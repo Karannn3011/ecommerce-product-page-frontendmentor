@@ -10,7 +10,7 @@ export function AddToCart(props) {
             <img
               onClick={props.dec}
               className="w-[20px] cursor-pointer"
-              src="./src/assets/icon-minus.svg"
+              src="./assets/icon-minus.svg"
               alt="minus"
             />
           </button>
@@ -19,7 +19,7 @@ export function AddToCart(props) {
             <img
               onClick={props.inc}
               className="w-[20px] cursor-pointer"
-              src="./src/assets/icon-plus.svg"
+              src="./assets/icon-plus.svg"
               alt="plus"
             />
           </button>
@@ -32,7 +32,7 @@ export function AddToCart(props) {
           className="flex  bg-orange w-[90%] mx-auto items-center justify-evenly px-20 rounded-lg lg:w-[50%] lg:px-4 mt-4 lg:mt-0 py-4 hover:bg-orange/80 cursor-pointer"
         >
           <div className="flex items-center gap-x-4">
-            <img src="./src/assets/icon-cart.svg" alt="cart" />
+            <img src="./assets/icon-cart.svg" alt="cart" />
             <p className="font-semibold text-black/50">Add to cart</p>
           </div>
         </button>

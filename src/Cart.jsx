@@ -15,7 +15,7 @@ export default function Cart(props) {
               <div className="w-[45px]">
                 <img
                   className="rounded-lg"
-                  src="src/assets/image-product-1-thumbnail.jpg"
+                  src="./assets/image-product-1-thumbnail.jpg"
                   alt="thumb"
                 />
               </div>
@@ -34,7 +34,7 @@ export default function Cart(props) {
                     props.setItems(0);
                     console.log(props.items);
                   }}
-                  src="src/assets/icon-delete.svg"
+                  src="./assets/icon-delete.svg"
                   alt="delete"
                 />
               </div>

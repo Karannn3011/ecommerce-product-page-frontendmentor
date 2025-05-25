@@ -32,7 +32,7 @@ export default function DesktopLightbox(props) {
         onClick={prevImage}
       >
         <span className="inline-flex bg-white items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
-          <img src="./src/assets/icon-previous.svg" alt="prev" />
+          <img src="./assets/icon-previous.svg" alt="prev" />
           <span className="sr-only">Previous</span>
         </span>
       </button>
@@ -42,7 +42,7 @@ export default function DesktopLightbox(props) {
         onClick={nextImage}
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
-          <img src="./src/assets/icon-next.svg" alt="next" />
+          <img src="./assets/icon-next.svg" alt="next" />
           <span className="sr-only">Next</span>
         </span>
       </button>

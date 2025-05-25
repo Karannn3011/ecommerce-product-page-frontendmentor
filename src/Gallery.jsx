@@ -3,7 +3,7 @@ import DesktopLightbox from "./DesktopLightbox.jsx";
 
 // Importing the product images and thumbnails dynamically
 const productImages = import.meta.glob(
-  "../src/assets/image-product-[0-9].{jpg,jpeg,png,svg}",
+  "./assets/image-product-[0-9].{jpg,jpeg,png,svg}",
   {
     eager: true,
     query: "?url",
@@ -12,7 +12,7 @@ const productImages = import.meta.glob(
 );
 
 const thumbnails = import.meta.glob(
-  "../src/assets/*thumbnail*.{jpg,jpeg,png,svg}",
+  "./assets/*thumbnail*.{jpg,jpeg,png,svg}",
   {
     eager: true,
     query: "?url",
@@ -77,7 +77,7 @@ export default function ProductGallery() {
         onClick={prevImage}
       >
         <span className="inline-flex bg-white items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
-          <img src="./src/assets/icon-previous.svg" alt="prev" />
+          <img src="./assets/icon-previous.svg" alt="prev" />
           <span className="sr-only">Previous</span>
         </span>
       </button>
@@ -87,7 +87,7 @@ export default function ProductGallery() {
         onClick={nextImage}
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
-          <img src="./src/assets/icon-next.svg" alt="next" />
+          <img src="./assets/icon-next.svg" alt="next" />
           <span className="sr-only">Next</span>
         </span>
       </button>
