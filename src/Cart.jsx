@@ -40,7 +40,13 @@ export default function Cart(props) {
               </div>
             </div>
             <div className="px-4 pt-3 pb-5">
-              <button onClick={() => alert("Thanks for purchasing!")} className="bg-orange cursor-pointer p-3 w-[100%] rounded-lg">
+              <button
+                onClick={() => {
+                  alert("Thanks for purchasing!");
+                  window.location.reload();
+                }}
+                className="bg-orange cursor-pointer p-3 w-[100%] rounded-lg"
+              >
                 Checkout
               </button>
             </div>
