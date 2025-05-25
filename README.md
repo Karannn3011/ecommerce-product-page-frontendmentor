@@ -40,7 +40,7 @@ Mobile:
 
 ### Links
 
-- Live Site URL: [Here](https://ecommerce-product-page-frontendmentor-flax.vercel.app/)
+- Live Site URL: [here](https://ecommerce-product-page-frontendmentor-flax.vercel.app/)
 
 ## My process
 
