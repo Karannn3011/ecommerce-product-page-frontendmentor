@@ -3,7 +3,7 @@ import DesktopLightbox from "./DesktopLightbox.jsx";
 
 // Importing the product images and thumbnails dynamically
 const productImages = import.meta.glob(
-  "./assets/image-product-[0-9].{jpg,jpeg,png,svg}",
+  "./src/assets/image-product-[0-9].{jpg,jpeg,png,svg}",
   {
     eager: true,
     query: "?url",
@@ -12,7 +12,7 @@ const productImages = import.meta.glob(
 );
 
 const thumbnails = import.meta.glob(
-  "./assets/*thumbnail*.{jpg,jpeg,png,svg}",
+  "./src/assets/*thumbnail*.{jpg,jpeg,png,svg}",
   {
     eager: true,
     query: "?url",
